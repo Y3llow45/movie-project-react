@@ -1,8 +1,12 @@
 import './App.css';
+import Heading from './components/Heading';
+import MovieList from './components/MovieList';
 
 function App() {
   return (
-    <div className="App">
+    <div className="site-wrapper">
+      <Heading />
+      <MovieList />
     </div>
   );
 }
