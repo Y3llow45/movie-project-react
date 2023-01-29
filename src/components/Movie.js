@@ -2,7 +2,7 @@ function Movie(props) {
     return (
         <article>
             <h3>{props.title}</h3>
-            <p>{props.description}</p>
+            <p>{props.description || 'Description is not currently available'}</p>
         </article>
     )
 }
