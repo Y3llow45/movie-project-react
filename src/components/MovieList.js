@@ -2,9 +2,6 @@ import {Component} from 'react'
 import Movie from './Movie'
 
 class MovieList extends Component {
-    constructor(props) {
-        super(props)
-    }
     render(){
         return (
             <div className="movie-list">

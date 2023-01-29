@@ -12,7 +12,7 @@ const movies = [
 function App() {
   return (
     <div className="site-wrapper">
-      <Heading />
+      <Heading>My custom collection</Heading>
       <MovieList movies={movies}/>
     </div>
   );

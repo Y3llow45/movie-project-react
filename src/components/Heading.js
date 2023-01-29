@@ -1,7 +1,7 @@
-function Heading() {
+function Heading(props) {
     return (
         <header>
-            <h1>Movie Collection</h1>
+            <h1>{props.children}</h1>
         </header>
     )
 }
