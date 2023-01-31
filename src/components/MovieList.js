@@ -8,7 +8,6 @@ class MovieList extends Component {
     render(){
         return (
             <div className="movie-list">
-                <h2>The best movies</h2>
                 {this.props.movies.map(x => {
                     return <Movie 
                         title={x.title}
