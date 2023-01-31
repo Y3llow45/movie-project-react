@@ -1,7 +1,7 @@
 import './App.css';
 import Heading from './components/Heading';
 import MovieList from './components/MovieList';
-import Counter from './components/Counter'
+/*import Counter from './components/Counter'*/
 
 const movies = [
   {title: "Madagascar", description: "A group of animals who have spent all their life in a New York zoo end up in the jungles of Madagascar, and must adjust to living in the wild.", year: 2005, genres: ["Animation", "Adventure", "Comedy", "Family"]},
