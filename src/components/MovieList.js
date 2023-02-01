@@ -8,7 +8,7 @@ class MovieList extends Component {
     render(){
         return (
             <div className="movie-list">
-                {this.props.movies.map(x => {
+                {this.props.movies.map((x, index) => {
                     return <Movie 
                         title={x.title}
                         description={x.description}
