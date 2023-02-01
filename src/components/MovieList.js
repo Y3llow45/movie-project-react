@@ -10,6 +10,7 @@ class MovieList extends Component {
             <div className="movie-list">
                 {this.props.movies.map((x, index) => {
                     return <Movie 
+                        key={x._id}
                         title={x.title}
                         description={x.description}
                         year={x.year} 
