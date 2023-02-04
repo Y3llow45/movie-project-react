@@ -4,9 +4,17 @@ import Message from './Message'
 class Footer extends Component {
     constructor(props) {
         super(props)
+        this.state = {
+            showFooter: true
+        }
+    }
+    componentDidMount() {
+        setTimeout(() => {
+            this.setState({showFooter: false})
+        }, 6500)
     }
     render() {
-        return <Message text="All rights reserved &copy;" />
+        return this.state.showFooter && <Message text="All rights reserved &copy;" />
     }
 }
 

@@ -3,17 +3,23 @@ import { Component } from "react";
 class Message extends Component {
     constructor(props) {
         super(props)
+        this.state = {
+            company: "Any"
+        }
     }
     componentDidMount() {
         setTimeout(() => {
-            this.forceUpdate();
-        }, 1000);
+            this.setState({company: "MyCompany"})
+        }, 5000);
     }
     componentDidUpdate() {
         console.log('component did update');
     }
+    componentWillUnmount(){
+        
+    }
     render() {
-        return <span>{this.props.text}</span>
+        return <span>{this.props.text} || {this.state.company}</span>
     }
 }
 
