@@ -10,13 +10,13 @@ class Message extends Component {
     componentDidMount() {
         setTimeout(() => {
             this.setState({company: "MyCompany"})
-        }, 5000);
+        }, 1000);
     }
     componentDidUpdate() {
         console.log('component did update');
     }
     componentWillUnmount(){
-        
+
     }
     render() {
         return <span>{this.props.text} || {this.state.company}</span>
