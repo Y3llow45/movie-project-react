@@ -1,4 +1,5 @@
 import { Component } from "react";
+import './Message.css';
 
 class Message extends Component {
     constructor(props) {
@@ -19,7 +20,18 @@ class Message extends Component {
 
     }
     render() {
-        return <span>{this.props.text} || {this.state.company}</span>
+        /*let style = {
+            backgroundColor: 'pink',
+            fontSize: 44
+        };
+        if(true) {
+            style.textDecoration = 'underline'
+        }*/
+        let classes = ['default-class'];
+        if(true) {
+            classes.push('selected-movie')
+        }
+        return <span /*style={style}*/ className={classes.join(" ")}>{this.props.text} || {this.state.company}</span>
     }
 }
 
