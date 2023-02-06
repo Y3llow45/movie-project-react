@@ -5,7 +5,7 @@ import refreshComponent from "./hoc/refreshComponent";
 class Footer extends Component {
     render() {
         console.log(this.props.refreshCount);
-        return (this.props.refreshCount) ? <Message text="All rights reserved &copy;" /> : null
+        return (this.props.refreshCount === 0) ? <Message text="All rights reserved &copy;" /> : null
     }
 }
 
