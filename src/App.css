@@ -41,18 +41,7 @@
   color: brown;
 }
 
-.movie-article {
-  border: #495e86;
-  border-radius: 12px;
-  /*background: linear-gradient(90deg, rgba(151,176,30,1) 0%, rgba(34,254,151,0.9697012594100141) 100%);*/
-  background: rgb(215, 167, 247);
-  background: linear-gradient(60deg,rgb(254, 73, 73) 0%, rgb(251, 193, 113)100%);
-  display: block;
-  width: 300px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 
 .movie-list {
   display: flex;

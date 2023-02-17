@@ -31,7 +31,10 @@ class Message extends Component {
         if(true) {
             classes.push('selected-movie')
         }
-        return <span /*style={style}*/ className={classes.join(" ")}>{this.props.text} || {this.state.company}</span>
+        return (
+            <div className="footer-container">
+                <span /*style={style}*/className="footer-message" /*className={classes.join(" ")}*/>{this.props.text} || {this.state.company}</span>
+            </div>);
     }
 }
 

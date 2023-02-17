@@ -1,3 +1,5 @@
+import style from "./Book.module.css"
+
 function Movie(props) {
     if(!props.title) {
         return (
@@ -6,7 +8,7 @@ function Movie(props) {
     }
     return (
         //<article onClick={() => console.log(`${props.title} is clicked!`)}>
-        <article className="movie-article">
+        <article className={style.article}>
             <h1 className="text" onClick={props.clickHandler}>{props.title}</h1>
             <h3 className="text">{props.year || 'Default year'}</h3>
             <h4 className="text">{props.genres.join(', ') || 'Default genres'}</h4>
